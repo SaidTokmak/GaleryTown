@@ -7,4 +7,5 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface ILocationRepository extends JpaRepository<Location, Integer> {
 
+    Location findLocationById(int locationId);
 }
